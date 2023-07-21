@@ -15,9 +15,10 @@ import {
     figma,
     briefcase,
     graduation,
-    carrent,
-    jobit,
-    tripguide,
+    gericht,
+    dasher,
+    shop,
+    summariser,
     threejs,
   } from "../assets";
   
@@ -198,8 +199,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: gericht,
+      source_code_link: "https://github.com/Dev26x/gerich-restaurant",
     },
     {
       name: "Shop-e",
@@ -219,8 +220,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: shop,
+      source_code_link: "https://github.com/Dev26x/shop-e",
     },
     {
       name: "Dasher",
@@ -240,8 +241,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: dasher,
+      source_code_link: "https://github.com/Dev26x/dasher",
     },
     {
       name: "Article summariser",
@@ -261,8 +262,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: summariser,
+      source_code_link: "https://github.com/Dev26x/article-summarizer",
     },
   ];
   
