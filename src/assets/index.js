@@ -24,9 +24,10 @@ import threejs from "./tech/threejs.svg";
 import briefcase from './briefcase.png';
 import graduation from './graduation.png'
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import dasher from "./dasher.png";
+import gericht from "./gericht.png";
+import shop from "./shop.png";
+import summariser from "./summariser.png"
 
 export {
   logo,
@@ -52,7 +53,8 @@ export {
   threejs,
   briefcase,
   graduation,
-  carrent,
-  jobit,
-  tripguide,
+  gericht,
+  dasher,
+  shop,
+  summariser,
 };

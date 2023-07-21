@@ -1,7 +1,5 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { style } from "../style";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../Data";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -37,7 +35,15 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project}/>
+          <ProjectCard 
+            key={`project-${index}`} 
+            index={index} 
+            {...project}
+            description={project.description}
+            tags={project.tags}
+            image={project.image}
+            source_code_link={project.source_code_link}
+          />
         ))}
       </div>
 
