@@ -157,33 +157,6 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
   const projects = [
     {
       name: "Gericht-lux",
@@ -201,11 +174,12 @@ import {
       ],
       image: gericht,
       source_code_link: "https://github.com/Dev26x/gerich-restaurant",
+      live_link: "https://gericht-lux.netlify.app/",
     },
     {
       name: "Shop-e",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Responsive E-commerce web application",
       tags: [
         {
           name: "reactjs",
@@ -222,11 +196,12 @@ import {
       ],
       image: shop,
       source_code_link: "https://github.com/Dev26x/shop-e",
+      live_link: "https://shop-e-v1.netlify.app/",
     },
     {
       name: "Dasher",
       description:
-        "Web-based Admin dashboard application currently optimised for desktop and large screen devices.",
+        "Admin dashboard for desktop devices.",
       tags: [
         {
           name: "reactjs",
@@ -243,11 +218,12 @@ import {
       ],
       image: dasher,
       source_code_link: "https://github.com/Dev26x/dasher",
+      live_link: "https://dasher-v1.netlify.app/",
     },
     {
       name: "Article summariser",
       description:
-        "Web tool that helps condense lengthy articles into concise summaries",
+        "Condenses articles into concise summaries",
       tags: [
         {
           name: "reactjs",
@@ -264,7 +240,8 @@ import {
       ],
       image: summariser,
       source_code_link: "https://github.com/Dev26x/article-summarizer",
+      live_link: "https://article-summarizer-v1.netlify.app/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

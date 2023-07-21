@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from '../utils/motion';
 import { github } from "../assets";
 
-const ProjectCard = ({ index, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, description, tags, name, image, source_code_link, live_link }) => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
@@ -24,8 +24,9 @@ const ProjectCard = ({ index, description, tags, image, source_code_link }) => {
           />
 
           <div
-            className="absolute inset-0 flex justify-end m-3 card-img_hover"
+            className="absolute inset-0 flex justify-end m-3 gap-1 card-img_hover"
           >
+            {/* github url link */}
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="red-gradient w-10 h-10 rounded-full flex
@@ -37,9 +38,47 @@ const ProjectCard = ({ index, description, tags, image, source_code_link }) => {
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
+
+            {/* live project url */}
+            <div 
+              onClick={() => window.open(live_link, '_blank')}
+              className="red-gradient w-10 h-10 rounded-full flex
+               justify-center items-center cursor-pointer"
+            >
+              <img 
+                src={image}
+                alt='project url'
+                className="w-1/2 h-1/2 object-contain"
+              />
+
+            </div>
           </div>
-          
         </div>
+
+        <div className="mt-5">
+          <h3 
+            className="text-[#fe0944] font-bold text-[24px]"
+          >
+            {name}
+            </h3>
+          <p
+            className="text-secondary text-[14px] mt-2"
+          >
+            {description}
+          </p>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p 
+              key={tag.name}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+
       </Tilt>
     </motion.div>
   )
